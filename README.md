@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 3D Character Viewer
 
-## Getting Started
+A Next.js + Three.js application that displays animated 3D characters with dynamic lighting and interactive controls. Perfect for previewing and testing 3D character animations in a web browser.
 
-First, run the development server:
+![Demo Preview](./docs/images/image.gif)
 
+## ✨ Features
+
+- **Interactive 3D Viewer**
+  - Real-time character animation playback
+  - Orbit controls for camera movement
+  - Dynamic lighting with moving light sources
+  - Real-time shadow rendering with quality controls
+
+- **Advanced Material System**
+  - PBR (Physically Based Rendering) materials
+  - Environment mapping for realistic reflections
+  - Adjustable material properties (metalness, roughness, etc.)
+
+- **Comprehensive GUI Controls**
+  - Character position, rotation, and scale
+  - Light intensity and shadow quality
+  - Animation playback controls
+  - Camera controls
+
+## 🔧 Requirements
+
+- Node.js 18.0.0 or higher
+- Modern web browser with WebGL support
+- npm or yarn package manager
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/harukaapps/3d-character-viewer.git
+cd 3d-character-viewer
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎮 Controls
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Model Controls
+- **Scale**: Adjust character size (0.1 - 5.0)
+- **Position**: Move character in 3D space
+  - X: Left/Right (-3 to 3)
+  - Y: Up/Down (-3 to 3)
+  - Z: Forward/Backward (-3 to 3)
+- **Rotation**: Rotate character around Y axis
 
-## Learn More
+### Lighting Controls
+- **Spot Light**: Adjust main light intensity
+- **Moving Lights**: Control dynamic light brightness
+- **Shadows**: Customize shadow quality and softness
 
-To learn more about Next.js, take a look at the following resources:
+### Camera Controls
+- **Left Mouse**: Rotate camera
+- **Right Mouse**: Pan camera
+- **Mouse Wheel**: Zoom in/out
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠 Development
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project uses:
+- [Next.js](https://nextjs.org/) 13+ - React Framework
+- [Three.js](https://threejs.org/) - 3D Graphics Library
+- [TypeScript](https://www.typescriptlang.org/) - Type Safety
+- [dat.GUI](https://github.com/dataarts/dat.gui) - Control Interface
 
-## Deploy on Vercel
+## 📝 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT License - see [LICENSE](./LICENSE) file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👤 Author
+
+[@haruka_apps](https://github.com/harukaapps)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
